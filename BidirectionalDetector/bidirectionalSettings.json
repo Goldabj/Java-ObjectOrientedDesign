@@ -1,0 +1,27 @@
+{
+    // controls protection
+    "protection.level" : "public",
+    
+    // controls what classes to draw
+    "whitelist" : ["java.awt.Component", "java.awt.Container"],
+    
+    //controls what classes to not draw
+    "blacklist" : [""],
+    
+    //controls wether we will parse super classes
+	"recursive" : false,
+	
+	//specifies what patterns to detect in the UML
+	"pattern.detectors" : ["test.BidirectionalArrowDetector"],
+	
+	//specifies the patterns and their drawers for the factory
+	"pattern.drawers" : {
+					"test.BidirectionalPattern" : "test.BidirectionalDrawer"},
+	
+	//controls wether to render synthetic methods		
+	"synthetic.methods" : false,
+	
+	//controls which type of file format is used to produce the render format for UML
+	"file.creator" : "graphvizcreator.GraphVizCreator"
+
+}
